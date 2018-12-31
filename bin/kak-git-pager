@@ -1,0 +1,10 @@
+#!/bin/sh
+
+MOUVRE="${XDG_CONFIG_HOME}/kak/plugins/kakoune-mouvre"
+SOURCE="source /usr/share/kak/rc/core/diff.kak"
+
+if [ -d $MOUVRE ]; then
+    SOURCE="${SOURCE}; source ${MOUVRE}/mouvre.kak; source ${MOUVRE}/motion/diff.kak"
+fi
+
+$(dirname $0)/kak-pager "${SOURCE}; set buffer filetype diff"

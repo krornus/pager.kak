@@ -10,7 +10,7 @@
 
 - [Pager](bin/kak-pager)
 - [Manual](bin/kak-man-pager)
-- [Grep](bin/kak-grep-pager)
+- [Git](bin/kak-git-pager)
 
 ## Installation
 
@@ -28,6 +28,10 @@ PAGER=kak-pager
 
 ``` sh
 MANPAGER=kak-man-pager
+```
+
+``` sh
+GIT_PAGER=kak-git-pager
 ```
 
 [Kakoune]: http://kakoune.org

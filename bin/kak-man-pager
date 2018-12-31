@@ -1,3 +1,5 @@
 #!/bin/sh
 
-$(dirname $0)/kak-pager 'set buffer filetype man'
+SOURCE="source /usr/share/kak/rc/core/man.kak"
+
+$(dirname $0)/kak-pager "${SOURCE}; set buffer filetype man"

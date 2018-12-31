@@ -1,5 +1,4 @@
 #!/bin/sh
-
+sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g" |
 col --no-backspaces --spaces |
-
-kak -e "map global normal q :quit<ret>; $@"
+kak -n -e "source /usr/share/kak/rc/core/doc.kak; map global normal q :quit<ret>; $@"
